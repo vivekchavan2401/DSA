@@ -95,30 +95,33 @@
 
 
 # WAP  to calculate notes and Coin of 500, 200, 100, 50, 20, 10, 5, 2 and 1 from given amount
-amount = int(input("Enter an amount: "))
-notes_500 = amount // 500
-amount %= 500
-print("Notes of 500: ", notes_500)
-notes_200 = amount // 200
-amount %= 200
-print("Notes of 200: ", notes_200)
-notes_100 = amount // 100
-amount %= 100
-print("Notes of 100: ", notes_100)
-notes_50 = amount // 50
-amount %= 50
-print("Notes of 50: ", notes_50)
-notes_20 = amount // 20
-amount %= 20
-print("Notes of 20: ", notes_20)
-notes_10 = amount // 10
-amount %= 10
-print("Notes of 10: ", notes_10)
-notes_5 = amount // 5
-amount %= print("Notes of 5: ", notes_5)
-notes_2 = amount // 2
-amount %= 2
-print("Notes of 2: ", notes_2)
-notes_1 = amount // 1
-amount %= 1
-print("Notes of 1: ", notes_1)
+# amount = int(input("Enter an amount: "))
+# notes_500 = amount // 500
+# amount %= 500
+# print("Notes of 500: ", notes_500)
+# notes_200 = amount // 200
+# amount %= 200
+# print("Notes of 200: ", notes_200)
+# notes_100 = amount // 100
+# amount %= 100
+# print("Notes of 100: ", notes_100)
+# notes_50 = amount // 50
+# amount %= 50
+# print("Notes of 50: ", notes_50)
+# notes_20 = amount // 20
+# amount %= 20
+# print("Notes of 20: ", notes_20)
+# notes_10 = amount // 10
+# amount %= 10
+# print("Notes of 10: ", notes_10)
+# notes_5 = amount // 5
+# amount %= print("Notes of 5: ", notes_5)
+# notes_2 = amount // 2
+# amount %= 2
+# print("Notes of 2: ", notes_2)
+# notes_1 = amount // 1
+# amount %= 1
+# print("Notes of 1: ", notes_1)
+
+
+

@@ -1,0 +1,25 @@
+# Tuple;
+
+# mytuple = ("prashant", 25, 30,  25.5,True),
+# print(mytuple)
+# print(type(mytuple))
+
+
+# init_tuple=()
+# print(init_tuple.__len__())
+# print(type(init_tuple)) ---class tuple
+
+
+# init_tuple_1= "a","b"
+# init_tuple_2= ("a","b")
+# print(id(init_tuple_1))
+# print(id(init_tuple_2))
+# print(init_tuple_1 == init_tuple_2)
+
+
+# init_tuple = ("python",) * 3
+# print(type(init_tuple))
+
+# init_tuple = ("1",) * 3
+# init_tuple[0] = "2"
+# print(init_tuple)
