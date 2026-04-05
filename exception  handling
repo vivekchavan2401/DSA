@@ -1,0 +1,174 @@
+# n1 = int(input("Enter value of n1: "))
+# n2 = int(input("Enter value of n2: "))
+# try:
+#     print(n1/n2) 
+# except:
+#     print("Error: Cannot divide by zero")
+# print("to be continued")
+
+
+# -----------------------------------------------------------------------------------------
+
+
+# try:
+#     n1 = int(input("Enter value of n1: "))
+#     n2 = int(input("Enter value of n2: "))
+#     print(n1/n2) 
+# except ValueError:
+#     print("enter only integer value")
+# except ZeroDivisionError:
+#     print("Error: Cannot divide by zero")
+# print("to be continued")
+
+# -------------------------------------------------------
+
+# multiple different kind of exception with single except block
+
+# try:
+#     n1 = int(input("Enter value of n1: "))
+#     n2 = int(input("Enter value of n2: "))
+#     print(n1/n2) 
+# except (ValueError,ZeroDivisionError) as message:
+#     print(message)
+
+
+# ----------------------------------------------------------------------------------
+# if any third exception is coming it goes to default except block
+# try:
+#     n1 = int(input("Enter first value :"))
+#     n2 = int(input("Enter second value :"))
+#     print(n1/n2)
+# except (ValueError,ZeroDivisionError) as message:
+#     print("Enter Correct Number :",message)
+# except:
+#     print("This is default part of except block")
+
+# --------------------------------------------------------------
+
+
+# try:
+#     n1 = int(input("Enter first value :"))
+#     n2 = int(input("Enter second value :"))
+#     print(n1/n2)
+# except (ValueError,ZeroDivisionError) as message:
+#     print("Enter Correct Number :",message)
+# else:
+#     print("Everything is OK!") # execute if try block does not show error ,and if yes then it not execute
+
+
+
+# --------------------------------------------------------------------------------------
+# try:
+#     n1 = int(input("Enter first value :"))
+#     n2 = int(input("Enter second value :"))
+#     print(n1/n2)
+# except (ValueError,ZeroDivisionError) as message:
+#     print("Enter Correct Number :",message)
+# finally:
+#     print("I will always Executed")
+
+
+# -----------------------------------------------
+# nested except block
+
+
+# try:
+#     n1 = int(input("Enter first value :"))
+#     n2 = int(input("Enter second value :"))
+#     try:
+#         print(n1/n2)
+#     except ZeroDivisionError as msg:
+#         print(msg)
+# except ValueError as msg:
+#     print(msg)
+
+
+
+
+# try:
+#     n1 = int(input("Enter first value :"))
+#     n2 = int(input("Enter second value :"))
+#     print(n1/n2)
+# except (ZeroDivisionError, ValueError) as message:
+#     print(message)
+# else:
+#     print("there is no error in try block")
+# finally:
+#     print("i am finally block i always executed whether executed or not")
+
+
+
+
+# --------------------------------
+
+# mylist = [5,7,8,3,7,8,9,2,3]
+# newlist = []
+
+# for i in range(len(mylist)):
+#     count = 0
+#     key = mylist[i]
+
+#     j=i+1
+#     while j<len(mylist):
+#         if key == mylist[j]:
+#             newlist.append(key)
+#         j = j+1
+# print(len(newlist))
+
+
+# ________________________________________________________________________
+
+# find the seconf largest eliment
+
+# list=[7,3,9,2,8]
+# list.sort()
+# print(list)
+# print(list[-2])
+
+#------------------------------------------------------
+
+# i=1
+# while i<=5:
+#     print(i)
+#     i=i+1
+
+
+# # --------------------------------------------------------
+# username =""
+# password =""
+# while username != "vivek" or password != "vivek":
+#     username=input("Enter username: ")
+#     password=input("Enter password: ")
+
+# ----------------------------------------------------
+# wap to count number of vowels,consonantin a string
+
+# name= "programming"
+# vowels=["a","e","i","o","u"]
+# vowel=0
+# consonants=0
+# for i in name:
+#     if i in vowels:
+#         vowel=vowel+1
+#     else:
+#         consonants=consonants+1
+# print(vowel)
+# print(consonants)
+
+# # ------------------------------------------------------------------------------------
+
+# remove all occurance of an eliment in the list
+
+  
+
+# list = [1,2,2,3,4,2]
+# print(list)
+# newlist = []
+# element = int(input("Enter the element to remove: "))
+# for i in list:
+#     if i != element:
+#         newlist.append(i)
+# print(newlist)
+    
+
+# ----------------------------------------------------------------

@@ -1,0 +1,120 @@
+# mydist = {101 : "vivek",
+#           102 : "Pranju",
+#           "103" : "annu",
+#           "104" : "Aman",
+#           101 : "soham",
+#           104 : "pranju"
+
+# }
+# print(mydist)
+
+# with the help of key we have to print values
+
+# a = mydist[102]
+# print(a)
+
+#  we will replace od value by new value
+
+# mydist[102]="achal"
+# print(mydist)
+
+# # only print key
+# for x in mydist.values():
+#     print(x)
+
+# printing key and value both
+# for x,y in mydist.items():
+#     print(x,y)
+
+
+# if i have to add new key and value pair in my dictionary
+# mydist["Mobile_no"] = 123456789
+# print(mydist)
+
+
+
+# a = {(1,2):1,(2,3):2,(3,4):3}
+# print(a[3,4])
+
+# a = {"a":1,"b":2,"c":3}
+# print(a["a","b"])
+
+ 
+# arr = {}
+# arr[1] = 1
+# arr['1'] = 2
+# arr[1] +=1
+# print(arr)
+
+# sum = 0
+# for k in arr:
+#     sum += arr[k]
+# print(sum)
+
+# my_dist = {}
+# my_dist[1] = 1
+# my_dist['1'] = 2
+# my_dist[1.0] = 4
+# sum = 0
+# for k in my_dist:
+#     sum += my_dist[k]
+# print(sum)
+
+# my_dict = {}
+# my_dict[(1,2,4)] = 8
+# my_dict[(4,2,1)] = 10
+# my_dict[(1,2)] = 12
+# sum= 0
+# for k in my_dict:
+#     sum += my_dict[k]
+# print(sum)
+# print(my_dict)
+
+
+
+# box = {}
+# jars = {}
+# crates = {}
+# box['biscuit'] = 1
+# box['cake'] = 3
+# jars['jam'] = 4
+# crates['box'] = box
+# crates['jars'] = jars
+# print(len(crates[box]))
+
+# dict ={"c":97,"a":96,"b":98}
+# for _ in sorted(dict):
+#     print(dict[_])
+
+
+
+# rec = {"Name" : "python","Age":"20"}
+# id1 = id(rec)
+# print(id(rec))
+# del rec
+
+# rec = {"Name" : "python","Age":"20"}
+# id2 = id(rec)
+# print(id(rec))
+# print(id1 == id2)
+
+
+# data = {"x": 20, "y": 10, "z": 5}
+# min_key = min(data, key=data.get)
+# print(min_key)  
+
+
+# mydict = {
+#     101 : "prashant",
+#     102 : "ashish",
+#     "103" : "mohini",
+#     "104" : "trivani",
+#     101 : "ashish",
+#     104 : "ashish"
+# }
+# print(mydict)
+
+# #remove key and value
+# mydict.pop(101)
+# print(mydict)
+ 
