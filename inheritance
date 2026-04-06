@@ -1,0 +1,157 @@
+# inheritance
+# extending property from one class to another class is called inheritance
+# Directly we are getting here reusability concept
+# base class : A class which inherits its property to another is called bas eclass or parent class
+# derived class: A class in which propertiesmare inherited called as derived class or child class
+# 
+# 
+# Single class nheritance 
+# class College:
+#     def college_name(self):
+#         print("yashwantrao Bhonsale Institute of technology")
+
+# class Student(College):
+#     def student_info(self):
+#         print("Name : Jay Khot")
+#         print("Branch : Computer Engineering")
+
+# obj=Student()
+# obj.college_name()
+# obj.student_info()
+# ===================================================================
+
+# multilevel inheritance
+
+# class College:                  #first class
+#     def college_name(self):    
+#         print("Mordern College")
+
+# class Student(College):         #second class
+#     def student_info(self):      
+#         print("Name : Prashant Jha")
+#         print("Branch : Computer Science")
+
+# class Exam(Student):
+#     def subject(self):
+#         print("Subject1 : Design Engineering")
+#         print("Subject2 : Mathematics")
+#         print("Subject3 : C-Language")
+# obj = Exam()    
+# obj.college_name()
+# obj.student_info()
+# obj.subject()
+
+# ================================================
+
+# class SubjMarks:
+#     math = int(input("Enter paper marks of math :"))
+#     eng = int(input("Enter paper marks of english :"))
+#     sci = int(input("Enter paper marks of science :"))
+#     c = int(input("Enter paper marks of c language :"))
+
+# class Practmarks:
+#     cpract = int(input("Enter practical marks of c language :"))
+
+# class Result(SubjMarks,Practmarks):
+#     def total(self):
+#         if self.math >= 40 and self.eng >= 40 and self.sci >= 40 and self.c >= 40 and self.cpract >= 20:
+#             print("pass")
+#         else:
+#             print("fail")
+# obj = Result()
+# obj.total()
+
+# ============================================================
+
+# polymorphism
+
+
+# class Principal:  
+#     def role(self):  
+#         print("i am managing all activity of college")  
+  
+# class Dean:  
+#     def role(self):  
+#         print('Dean= I am decision taking person')  
+          
+# class Hod:  
+#     def role(self):  
+#         print('Hod= I have responsibility of Teachers and Students')         
+# class Faculty:  
+#     def role(self):  
+#         print('Faculty= I have to complete syllabus successfully')  
+
+# def  func(obj):  
+#     obj.role()
+# campus=[Principal(),Dean(),Hod(),Faculty()]   
+# for obj in campus:
+
+
+# ===========================================================
+
+
+# class Arithmetic:
+#     def add(self,a):
+#         print(a)
+#     def add(self,a,b):
+#         print(a+b)
+#     def add(self,a,b,c):
+#         print(a+b+c)    
+
+# obj = Arithmetic()
+# obj.add(10)
+# obj.add(10,20)
+# obj.add(1,2,3)
+
+# ================================================
+
+# class Arithmetic:
+#     def add(self,a=None,b=None,c=None):
+#         if a!=None and b!=None and c!=None:
+#             print(a+b+c)
+#         elif a!=None and b!=None:
+#             print(a+b)
+#         elif a!=None:
+#             print(a)
+#         else:
+#             print("No arguments")
+# obj=Arithmetic()
+# obj.add(10)
+# obj.add(10,20)
+# obj.add(10,20,30)
+
+# ===================================================================
+# Constructor overloading
+
+# class Arithmetic:
+#     def __init__(self):
+#         print("Ther is no argument")
+#     def __init__(self, a):
+#         print("passing one argument :")
+#     def __init__(self, a, b):
+#         print("passing two argument :")
+
+# obj = Arithmetic()
+# obj = Arithmetic(10)
+# obj = Arithmetic(2,2)
+
+
+# ====================================================================
+
+# method overriding
+
+class Rbi:
+    def home_loan(self):
+        print("Home loan = 7.5")
+    def car_loan(self):
+        print("Car loan 8 %")
+
+class Sbi(Rbi):
+    def home_loan(self):
+        print("Sbi provides home loan = 6.5")
+        super().home_loan()   #super() is used to call the parent class method
+
+obj = Sbi()
+obj.home_loan()     #child class method overrides the parent class method
+obj.car_loan()
+

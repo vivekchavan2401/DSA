@@ -1,0 +1,322 @@
+# class Student:
+#     roll_no = 101   #data member
+
+#     def studentData(self):  #method/member function
+#         print("Student Information")
+
+# obj = Student()
+# print(obj.roll_no)
+# obj.studentData()
+# --------------------------------------------------
+
+# constructor
+# class Demo:
+#     def __init__(self):
+#         print("I am Constructor")
+
+#     def msg(self):
+#         print("Hello class")
+
+# obj1 = Demo()
+# # print obj1
+# obj2 = Demo()
+# obj1.msg()
+
+# --------------------------------------------------
+
+
+# class Hod:
+#     def __init__(self):# constructor
+#         self.Name="vivek"
+#         self.Age=23
+#         self.empid=1001
+#     def info(self):
+#         print("My Name is: ",self.Name)
+#         print("My Age is: ",self.Age)
+#         print("My empid:",self.empid)
+# obj=Hod()
+# obj.info()
+# --------------------------------------------------
+
+
+# class Hod:
+#     def __init__(self,name,age,rollno): #constructor
+#         self.name = name
+#         self.age =  age
+#         self.rollno = rollno
+
+#     def show(self):
+#         print("My name is ",self.name)
+#         print("My Age is :",self.age)
+#         print("My Roll No is :",self.rollno)
+# obj = Hod('Argun',45,101)
+# obj.show()
+# ---------------------------------------------------------------------
+
+
+# class New:
+#     def __init__(self):
+#         self.a =10
+
+# obj1 = New()
+# obj2 = New()
+# obj3 = New()
+# print(obj1.a)
+# print(obj2.a)
+# print(obj3.a)
+# print()
+# obj1.a = 20
+# print(obj1.a)
+# print(obj2.a)
+# print(obj3.a)
+# ------------------------------------------------
+
+
+# class Student:  
+#     def __init__(self): 
+#         self.s_name   ="Jay"  0
+#         self.s_rollno = 101   #declaring  instance var innside constructor 
+     
+#     def getdata(self):  
+#         self.s_mb     = 28282828282    
+  
+# obj = Student()   
+# obj.getdata()  
+# del obj.s_mb #delete the instance variable
+# obj.s_branch = "CS"   #adding the instance variable by using object
+# print(obj.__dict__)
+
+# ===================================================
+
+
+# class New:
+#     a=10
+#     def _init_(self):
+#         self.name="Jay"
+
+# obj1=New()        
+# obj2=New()                
+# obj3=New() 
+# print(obj1.a)
+# print(obj2.a)
+# print(obj3.a)
+# New.a=50
+# print()
+# print(obj1.a)
+# print(obj2.a)
+# print(obj3.a)
+# ========================================================
+
+# perform create,update ,insert,delete using class
+# class Student:
+#     def __init__(self):
+#         print("student management system")
+#         self.studentID =[]
+#         self.studentName=[]
+#         self.studentRollno=[]
+#         self.studentcity=[]
+
+#     def showStudent(self):
+#         for i in range(len(self.studentID)):    
+#             print(f"ID: {self.studentID[i]}, Name: {self.studentName[i]}, Rollno: {self.studentRollno[i]}, City: {self.studentcity[i]}")
+#             print()
+        
+        
+#     def addStudent(self):
+#         self.studentID.append(input("Enter student ID: "))
+#         self.studentName.append(input("Enter student Name: "))
+#         self.studentRollno.append(input("Enter student Rollno: "))
+#         self.studentcity.append(input("Enter student city: "))
+#         print("Student added successfully")
+
+#     def updateStudent(self):
+#         self.studentID.append(input("Enter student ID: "))
+#         self.studentName.append(input("Enter student Name: "))
+#         self.studentRollno.append(input("Enter student Rollno: "))
+#         self.studentcity.append(input("Enter student city: "))
+#         print("Student updated successfully")
+
+#     def deleteStudent(self):
+        
+#         self.studentID.remove(input("Enter student ID: "))
+#         self.studentName.remove(input("Enter student Name: "))
+#         self.studentRollno.remove(input("Enter student Rollno: "))
+#         self.studentcity.remove(input("Enter student city: "))
+#         print("do you really want to delete [Y/N]")
+#         if input == "Y":
+#             print("Student deleted successfully")
+#         else:
+#             print("Student not deleted")
+
+# obj = Student()
+
+# while True:
+    
+#     print(1, "Add Student")
+#     print(2, "Update Student")
+#     print(3, "Delete Student")
+#     print(4, "Show Student")
+#     print(5, "Exit")
+#     choice = int(input("Enter your choice: "))
+#     if choice == 1:
+#         obj.addStudent()
+#     elif choice == 2:
+#         obj.updateStudent()
+#     elif choice == 3:
+#         obj.deleteStudent()
+#     elif choice == 4:
+#         obj.showStudent()
+#     elif choice == 5:
+#         break
+#     else:
+#         print("Invalid choice")
+
+
+# -------------------------------------------------------------------------
+import sys
+class CRUD:
+    def __init__(self):
+        print("Student Management System")
+        self.studentId=[]
+        self.studentName=[]
+        self.studentRollNo=[]
+        self.studentCity=[]
+    def addStudent(self):
+        self.studentId.append(input("Enter student Id :"))
+        self.studentName.append(input("Enter student Name :"))
+        self.studentRollNo.append(input("Enter student Roll No :"))
+        self.studentCity.append(input("Enter student City :"))
+    def ShowStudent(self):
+        print("Student ID: \t\t StudentName \t\t StudentRollno \t\t City")
+
+        
+        for i in range(len(self.studentId)):
+            
+            
+        
+            print("----------------------------------------------------------------------------------")
+            print(self.studentId[i],"\t\t\t",self.studentName[i],"\t\t\t",self.studentRollNo[i],"\t\t\t",self.studentCity[i])
+            print("----------------------------------------------------------------------------------")
+    def updateStudent(self):
+        id = int(input("Enter student ID to update:"))
+        if id in self.studentId:
+            index = self.studentId.index(id)
+            print("1. Update Name")
+            print("2. Update Roll No")
+            print("3. Update City")
+            choice = int(input("Enter your choice: "))
+            if choice == 1:
+                self.studentName[index] = input("Enter new name: ")
+            elif choice == 2:
+                self.studentRollNo[index] = int(input("Enter new roll number: "))
+            elif choice == 3:
+                self.studentCity[index] = input("Enter new city: ")
+            else:
+                print("Invalid choice.")
+    
+        print("Student updated successfully.")
+
+    def deleteStudent(self):
+        id=input("Enter student ID to delete: ")
+        if id in self.studentId:
+            index=self.studentId.index(id)
+            del self.studentId[index]
+            del self.studentName[index]
+            del self.studentRollNo[index]
+            del self.studentCity[index]
+            print("Student deleted successfully")
+        else:
+            print("Student ID not found")
+obj=CRUD()
+while True:
+    print("1. Add Student")
+    print("2. Show Student")
+    print("3. Update Student")
+    print("4. Delete Student")
+    print("5. Exit")
+    choice=int(input("Enter your choice: "))
+    
+    if choice==1:
+        obj.addStudent()
+    elif choice==2:
+        obj.ShowStudent()
+    elif choice==3:
+        obj.updateStudent()
+    elif choice==4:
+        obj.deleteStudent()
+    elif choice==5:
+        sys.exit()
+    else:
+        print("Invalid choice")   
+            
+        
+# ==========================================================================
+# type of method 
+
+# 1> instance method
+
+class Student:
+    def __init__(self,name,rollno,mob):
+        self.name= name
+        self.rollno = rollno
+        self.mob = mob
+
+    def display(self):
+        print(self.name," ",self.rollno," ",self.mob)
+
+stud = Student("Prashant",1001,9876452365)
+stud.display()
+
+# 2> static method
+
+class Student:
+    #by using class name we can access static method
+    @staticmethod   #decorated
+    def get_personal_detail(firstname,lastname):
+        print("your oersonal details :",firstname,lastname)
+
+    @staticmethod
+    def contact_detail(mobile_no,rollno):
+        print("your contact detail :",mobile_no,rollno)
+        
+Student.get_personal_detail("prashant","jha")
+Student.contact_detail(8976542386,1001)
+
+# ============================================================
+class Father:  
+    def _init_(self):  
+        print("Father:= i am on time at breakfast table")  
+  
+class Child(Father):  
+    def _init_(self):  
+        print("Child:= i will be late for breakfast")  
+  
+obj = Child()
+class Father:  
+    def _init_(self):  
+        print("Father:= i am on time at breakfast table")  
+  
+class Child(Father):  
+    def _init_(self):  
+        print("Child:= i will be late for breakfast")  
+  
+obj = Child()
+class Father:  
+    def _init_(self):  
+        print("Father:= i am on time at breakfast table")  
+  
+class Child(Father):  
+    def _init_(self):  
+        print("Child:= i will be late for breakfast")  
+  
+obj = Child()
+
+
+
+
+
+
+
+
+        
+
