@@ -1,0 +1,23 @@
+# wap to reverse each word in the string
+#WAP to reverse each word in a string
+
+s = "Hello World"
+a = s.split()
+b = ""
+for i in a:
+    b += i[::-1] + " "
+print(s)
+print(b)
+
+
+#WAP to compress a string by replacing consecutive characters with thir counts
+
+s = "aaabbbcccc"
+a = ""
+for i in s:
+    if i not in a:
+        a += i
+        a += str(s.count(i))
+print(s)
+print(a)
+

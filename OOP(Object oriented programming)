@@ -277,7 +277,7 @@ class Student:
 
     @staticmethod
     def contact_detail(mobile_no,rollno):
-        print("your contact detail :",mobile_no,rollno)
+        print("your contact detail :",mobile_no,roll0014  no)
         
 Student.get_personal_detail("prashant","jha")
 Student.contact_detail(8976542386,1001)

@@ -1,0 +1,88 @@
+# stack implementation without size limit
+import sys
+class Stack:
+    def __init__(self):
+        self.stackList = [] # stack created
+
+    def push(self,value):
+        self.stackList.append(value)
+        print(self.stackList)
+
+    def displayStack(self):
+        print("------------------------")
+        print(self,self.stackList)
+        print("------------------------")
+
+    def isEmpty(self):
+        if len(self.stackList) == 0:
+            return True
+        else:
+            return False
+
+    def pop(self):
+        if self.isEmpty():
+            print("Stack is empty")
+        else:
+            self.stackList.pop()
+            print(self.stackList)
+
+    def deleteStack(self):
+        self.stackList.clear()
+        return "stack id deleted"
+    
+    def peak(self):
+        if self.isEmpty():
+            print("Stack is empty")
+        else:
+            return self.stackList[-1]
+    
+    def exitfromstack(self):
+        sys.exit()
+
+
+
+Stackobj=Stack()
+
+while True:
+    print(" ")
+    print("1.Push element in stack")
+    print("2.Dispaly stack element")
+    print("3.Check stack is empty or not")
+    print("4.Pop element from stack")
+    print("5.Delete the stack")
+    print("6.Peak into stack")
+    print("7.Exit")
+
+    choice=int(input("Enter your choice: "))
+    if choice==1:
+        val=int(input("Enter value: "))
+        Stackobj.push(val)
+        
+    elif choice==2:
+        Stackobj.displayStack()
+    elif choice==3:
+        if Stackobj.isEmpty():
+            print("Stack is empty")
+        else:
+            print("Stack is not empty")
+    elif choice==4:
+       print(Stackobj.pop())
+        
+    elif choice==5:
+        print(Stackobj.deleteStack())
+
+    elif choice==6:
+        print(Stackobj.peak())
+    
+    elif choice==7:
+        sys.exit()
+    else:
+        print("Invalid choice")
+
+    
+
+
+
+    
+    
+
